@@ -1,0 +1,32 @@
+
+<body>
+  <input type="text" id="input" value="" placeholder="choice
+  a number 1 to 5">
+  <button id="cf">Confirm</button>
+</body>
+
+
+<script type="text/javascript">
+ 
+  function RandomNum(x,y){
+      return Math.round(Math.random()*(y-x)+x);
+    }
+  let result = RandomNum(1,5);
+
+  document.getElementById("cf").addEventListener("click",function(){
+    let input = document.getElementById("input").value;
+    if (input==result){
+      alert("Yes, you r right. Refresh page and play again");
+    }
+    else{ alert("Wrong,type again");}
+     
+    console.log(result);
+  })
+      
+
+
+
+
+
+
+</script>
